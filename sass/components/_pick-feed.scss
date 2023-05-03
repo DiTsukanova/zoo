@@ -1,0 +1,294 @@
+.pick-feed {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
+    padding-top: 69px;
+    padding-bottom: 100px;
+    @include media-small-desktop {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    @include media-tablet {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        // width: 640px;
+        // height: 781px;
+        
+    }
+    
+
+}
+.wrapper {
+}
+.pick-feed__wrapper {
+}
+.pick-feed__content {
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding-top: 41px;
+    padding-bottom: 59px;
+    @include media-small-desktop {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    @include media-tablet {
+        // padding: 0 20px;
+        padding-top: 10px;
+        padding-bottom: 60px;
+        // position: absolute;
+        // top: 20px;
+        // left: 0;
+        
+        
+    }
+    @include media-mobile{
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+
+}
+
+.pick-feed__container {
+    padding-left: 99px;
+    @include media-small-desktop {
+        padding-left: 49px;
+    }
+    @include media-tablet {
+        padding-left: 0px;
+    }
+
+}
+
+.pick-feed__title {
+    color: $color-orange;
+    text-align: center;
+    @include media-tablet {
+        @include font(42px, 120%, 400, $color-orange);
+    }
+    @include media-mobile {
+        @include font(24px, 120%, 400, $color-orange);
+    }
+}
+.pick-feed__subtitle {
+    @include font(24px, 120%, 400, $color-black-blue);
+    margin-top: 30px;
+    margin-bottom: 40px;
+    @include media-small-desktop {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    @include media-tablet {
+        font-size: 22px;
+    }
+    @include media-mobile {
+        margin-top: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+.pick-feed__text1 {
+    @include font(16px, 130%, 500, $color-black-blue);
+    margin: 0;
+    
+    @include media-small-desktop {
+        max-width: 813px;
+    }
+    @include media-mobile {
+        display: none;
+    }
+
+}
+.pick-feed__text2 {
+    @include font(16px, 130%, 400, $color-black-blue);
+    margin: 0;
+    margin-top: 10px;
+    max-width: 863px;
+    @include media-small-desktop {
+        max-width: 823px;
+    }
+    @include media-mobile {
+        display: none;
+    }
+}
+
+.pick-feed__text2 a {
+    color: $color-black-blue;
+    text-decoration: none;
+    border-bottom: 1px solid $color-orange;
+}
+.pick-text__title2 {
+    margin-top: 60px;
+    @include font(36px, 46.8px, 400, $color-black-blue);
+    text-align: center;
+    @include media-small-desktop {
+        margin-top: 40px;
+    }
+    @include media-tablet {
+        margin-top: 30px;
+    }
+    @include media-mobile {
+        margin-top: -10px;
+        font-size: 24px;
+
+    
+}
+}
+
+
+
+.widjets {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    @include media-tablet {
+        margin-top: -16px;
+        gap: 42px;
+        justify-content: start;
+    }
+    @include media-mobile {
+        justify-content: center;
+        gap: 20px;
+        margin-top: -14px;
+    }
+    
+}
+@media (max-width: 590px) and (min-width: 321px) {
+    .widjets {
+        gap: 0;
+        justify-content: space-around;  
+    }
+}
+.widjet {
+    width: 168px;
+    height: 244px;
+    @include media-mobile {
+        height: 231px;
+    }
+}
+
+.widjet:first-child {
+    @include media-mobile {
+        height: 222px;
+    }
+}
+.widjet__icon {
+    background: white;
+    width: 168px;
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-orange;
+    border-radius: 5px;
+}
+
+
+
+.widjet__icon_1 {
+    display: inline-block;
+    width: 108px;
+    height: 60px;
+    background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/pay.svg');
+}
+
+.widjet__icon_2 {
+    display: inline-block;
+    width: 86px;
+    height: 95px;
+    background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/zoo.svg')
+    
+}
+
+.widjet__icon_3 {
+    display: inline-block;
+    width: 125px;
+    height: 72px;
+    background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/monkey.svg')
+}
+
+.widjet__description {
+    margin-top: 30px;
+    @include font(16px, 22.4px, 400, $color-black-blue);
+    @include media-mobile {
+        margin-top: 10px;
+    }
+    
+
+}
+.arrow {
+    width: 69px;
+    height: 35.8px;
+    display: inline-block; 
+    background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/strelka.svg');
+    margin-top: 60px;
+    @include media-tablet {
+        background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/arrow2.svg') center center no-repeat;
+        width: 103px;
+        height: 60px;
+        position: absolute;
+        top: 310px;
+        left: 130px;
+        margin: 0;
+    }
+    @include media-mobile {
+        transform: rotate(85deg);
+        top: 370px;
+        left: 195px;
+
+    }
+}
+
+.arrow2green {
+    @include media-tablet {
+        background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/arrow2.svg') center center no-repeat;
+        width: 103px;
+        height: 60px;
+        position: absolute;
+        top: 310px;
+        left: 340px;
+        margin: 0;
+        @include media-mobile {
+            transform: rotate(85deg);
+            top: 615px;
+            left: 195px;
+    
+        }
+
+    }
+}
+
+@media (max-width: 590px) and (min-width: 321px) {
+    .arrow {
+        display: none;  
+    }
+    .arrow2green {
+        display: none;
+    }
+
+}
+
+
+.pick-feed__button {
+    margin: 0 auto;
+    margin-top: 60px;
+    @include media-small-desktop {
+        margin-top: 70px;
+    }
+    @include media-tablet {
+        margin-top: 40px
+    }
+    @include media-mobile {
+        margin-top: 30px
+    }
+}
+.button {
+}
+
+.pick-feed__button a {
+    color: $color-white;
+    text-decoration: none;
+}

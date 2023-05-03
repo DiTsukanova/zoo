@@ -1,0 +1,13 @@
+.wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+    @include media-small-desktop {
+        max-width: 940px;
+    }
+    @include media-tablet {
+        max-width: 600px;
+    }
+    @include media-mobile {
+        max-width: 300px;
+    }
+}

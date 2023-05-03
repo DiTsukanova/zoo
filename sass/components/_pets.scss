@@ -1,0 +1,357 @@
+.pets {
+    padding-top: 173px;
+    padding-bottom: 100px;
+    position: relative;
+    @include media-small-desktop {
+        padding-top: 142px;
+        padding-bottom: 140px;
+    }
+    @include media-tablet{
+        padding-top: 80px;
+        padding-bottom: 100px;
+        
+    }
+    @include media-mobile{
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    
+}
+
+.pets__image1 {
+    background:url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/palm_foto.png') no-repeat;
+    width: 292px;
+    height: 460px;
+    position: absolute;
+    bottom:0;
+    left: 0px;
+    @include media-small-desktop {
+        background:url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/small-desktop/2.png') no-repeat;
+        width: 194px;
+        height: 202px;
+    }
+    @include media-tablet {
+        background:url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/small-desktop/flower2ts.png') no-repeat;
+        width: 134px;
+        height: 202px;
+    }
+    @include media-mobile {
+        background:url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/small-desktop/flower2mob.png') no-repeat;
+        width: 72px;
+        height: 72px;
+    }
+}
+
+
+.pets__image2{
+    background:url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/strelitzia.png');
+    position: absolute;
+    bottom:0;
+    right: 0px;
+    width: 368px;
+    height: 275px;
+    @include media-small-desktop {
+        background:url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/small-desktop/flower3small.png') no-repeat;
+        width: 241px;
+        height: 180px;
+    }
+    @include media-tablet {
+        background:url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/small-desktop/flower3tablet.png') no-repeat;
+        width: 175px;
+        height: 131px;
+    }
+    @include media-mobile {
+        background:url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/small-desktop/flower3mob.png') no-repeat;
+        width: 70px;
+        height: 71px;
+    }
+}
+
+
+
+.wrapper {
+}
+.pets__wrapper {
+}
+.pets__content {
+
+    
+}
+.pets__slider {
+    display: flex;
+    // position: relative;
+}
+
+.btn {
+    position: absolute;
+    top: 43%;
+    width: 62px;
+    height: 62px;
+    background: $color-orange;
+    border-radius: 50%;
+    padding: 23px 23px;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+        background: $color-green;
+    }
+    margin-top: 15px;
+    padding-top: 15px;
+}
+@media (max-width: 1300px) {
+    .btn {
+        top: 44%;
+        @include media-small-desktop {
+            top: 41%;
+        }
+        @include media-tablet {
+            top: 39%;
+        }
+    }
+
+
+    
+}
+
+
+#btn-right {
+    right: 0;
+}
+
+#btn-left {
+    left: 0;
+}
+
+@media (max-width: 1101px) {
+    
+#btn-right {
+    right: 38%;
+    @include media-small-desktop {
+        right: 35.5%;
+    }
+    @include media-tablet {
+        right: 38%;
+    }
+
+}
+
+#btn-left {
+    left: 38%;
+    @include media-small-desktop {
+        left: 35.5%;
+    }
+    @include media-tablet {
+        left: 38%;
+    }
+}
+}
+
+@media (max-width: 510px) {
+    #btn-left  {
+        left: 20%;
+        @include media-mobile {
+            display: none;
+        }
+    }
+    #btn-right {
+        right: 20%;
+        @include media-mobile {
+            display: none;
+        }
+    }
+}
+// @media (max-width: 1300px) {
+//     #btn-right {
+//         right: -51px;
+//     }
+    
+//     #btn-left {
+//         left: -51px;
+//     }
+    
+// }
+
+.pets__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 22px;
+
+    // @include media-tablet{
+    //     padding-top: 80px;
+    // }
+    // @include media-mobile{
+    //     padding-top: 40px;
+    // }
+}
+
+@media (max-width: 1300px) {
+    .pets__cards {
+        row-gap: 92px;
+        @include media-small-desktop {
+            row-gap: 92px;
+        }
+    }
+}
+
+@media (max-width: 1101px) {
+    .pets__cards {
+        padding: 0 19px;
+        @include media-small-desktop {
+            padding: 0;
+        }
+        @include media-tablet {
+            padding: 1px 1px;
+        }
+    }
+}
+
+
+@media (max-width: 590px) {
+    .pets__cards {
+        justify-content: center;
+    }
+}
+.pet__card {
+    box-sizing: border-box;
+    outline: 1px solid $color-orange;
+    border-radius: 5px;
+    outline-offset: -0px;
+
+
+
+}
+.card {
+
+}
+.card__image {
+    transition: all .3s;
+    &:hover {
+        
+        transform: scale(1.1);
+    }
+    @include media-small-desktop {
+        width: 294px;
+        height: 294px;
+    }
+    
+    border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+    .card__image {
+        width: 285px;
+        height: 285px;
+    }
+    .pets__cards {
+        height: 756px;
+        overflow: hidden;
+        row-gap: 70px;
+        @include media-tablet {
+            row-gap: 92px;
+        }
+        @include media-mobile {
+            height: 1388px;
+            row-gap: 20px;
+        }
+    }
+}
+
+/*-------------------------------------------------------------------*/
+
+.card__container{
+    position: relative;
+}
+.card__container:hover .card__image-description {
+    display: block;
+    bottom: -20px;
+    
+}
+.card__image-description {
+    width: 404px;
+    height: 75px;
+    @include media-small-desktop {
+        width: 326px;
+        left: -18px;
+    }
+    background: $color-gray-smoky;
+    text-align: center;
+    left: -19px;
+    bottom: 0px;
+    display: none;
+    padding: 15px 10px;
+    position: absolute;
+}
+
+
+
+.card__image-description1 {
+    margin: 0;
+    @include font(16px, 140%, 400, $color-white)
+}
+.card__image-description2 {
+    margin: 0;
+    @include font(16px, 140%, 400, $color-white)
+}
+
+.card__description {
+    padding: 2px 0px 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet {
+        padding: 1px 0px 3px 12px;
+    }
+}
+.card__text p{
+    margin: 0;
+}
+
+.card__subtitle {
+    @include font(16px, 22.4px, 500, #000000);
+    text-transform: uppercase;
+    @include media-tablet {
+        @include font(12.4px, 140%, 500, #000000);
+    }
+}
+.card__desc {
+    @include font(15px, 18px, 300, #000000);
+    @include media-tablet {
+        @include font(11.6px, 120%, 300, #000000);
+    }
+}
+.card__logo {
+}
+.card__logo_bananas {
+    display: inline-block;
+    background-image: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/banana.svg');
+    height: 37px;
+    width: 33px;
+    align-self: flex-end;
+    margin-right: 12px;
+}
+.card__logo_fish {
+    display: inline-block;
+    background-image: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/fish_icon.svg');
+    height: 38px;
+    width: 48px;
+    align-self: flex-end;
+    margin-right: 8px;
+}
+.pets__button {
+    margin: 0 auto;
+    margin-top: 80px;
+    @include media-tablet {
+        margin-top: 60px;
+    }
+    @include media-mobile{
+        margin-top: 20px;
+    }
+    
+}
+
+.pets__button a{
+    color: $color-white;
+    text-decoration: none;
+}
+.button {
+}

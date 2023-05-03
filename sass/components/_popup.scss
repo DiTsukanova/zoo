@@ -1,0 +1,95 @@
+    .testimonial-popup {
+        position: relative;
+        width: 268px;
+        height: 391px;
+        background: #F1F3F2;
+        border-radius: 20px;
+        padding: 15.5px;
+        
+      }
+    
+      .testimonial-popup::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 20px;
+        padding: 1px;
+        background: $color-orange;
+        -webkit-mask:
+           linear-gradient(#fff 0 0) content-box,
+           linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+                mask-composite: exclude;
+      }
+    
+      .testimonial-popup-content {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 120%;
+        color: #767474;
+        height: 306px;
+        overflow: hidden;
+        margin-top: 10px;
+      }
+      
+      .testimonial-content.popup {
+        height: 306px;
+      }
+      
+      .overlay2.popup {
+        z-index: 35;
+        background: rgba(0, 0, 0, 0.7);
+      }
+    
+      .overlay2.active {
+        z-index: 35;
+        background: rgba(0, 0, 0, 0.7);
+      }
+    
+      .overlay2 {
+        position: fixed;
+      
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        transition: .5s ease-in-out;
+      }
+    
+      .testimonial-popup {
+        position: fixed;
+        top: 0;
+        bottom: -150vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: none;
+      }
+      
+      .testimonial-popup.active {
+        bottom: 0;
+        z-index: 50;
+        display: block;
+        transition: ease-in-out .5s;
+      }
+      
+      .testimonial-popup-close {
+        position: absolute;
+        top: 0px; right: -20px;
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+      }
+      
+      .testimonial-popup-close1,
+      .testimonial-popup-close2 {
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: $color-orange;
+        border-radius: 2px;
+        transform: rotate(45deg);
+      }
+      
+      .testimonial-popup-close2 {
+        transform: rotate(-45deg);
+      }

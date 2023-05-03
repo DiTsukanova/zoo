@@ -1,0 +1,15 @@
+.button {
+    width: 298px;
+    height: 54px;
+    padding: 16px 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $color-orange;
+    @include font(16px, 140%, 500, $color-white);
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 25px;
+    &:hover {
+        background-color: #E47209;
+    }
+}

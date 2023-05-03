@@ -1,0 +1,321 @@
+.footer {
+    padding-top: 41px;
+    padding-bottom: 50px;
+    background-color: black;
+    
+    @include media-tablet {
+       padding: 12px 0;
+    }
+    @include media-mobile {
+        padding: 20px 0;
+     }
+}
+
+.footer__container1 {
+    display: flex;
+    justify-content: space-between;
+    @include media-mobile {
+        justify-content: center;
+    }
+    
+}
+
+.footer__wrapper {
+    position: relative;
+}
+.footer__logo a {
+    cursor: pointer;
+    @include font(19px, 120%, 400, $color-white);
+    text-decoration: none;
+    // @include media-tablet {
+    //     @include font(12.2px, 15px, 400, $color-white);
+    // }
+}
+
+.footer__logo {
+    position: relative;
+    height: 52px;
+    width: 82px;
+    text-align: center;
+    border: 1.18841px solid #FFFFFF;
+    cursor: pointer;
+    // @include media-tablet {
+    //     border: none;
+    //     height: 29.03px;
+    //     width: 47px;
+    // }
+    @include media-mobile {
+        border: none;
+        width: 128px;
+    }
+}
+
+
+.footer__logo span {
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    width: 7px;
+    height: 21px;
+    @include media-mobile {
+        top: 0px;
+        left: 76px;
+    }
+    
+    display: inline-block;
+    background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/bamboo.svg');
+//     @include media-tablet {
+//         top: 14px;
+//         left: 4px;
+//         width: 4.5px;
+//         height: 13.5px;
+// }
+
+
+}
+
+.footer__form {
+}
+.form {
+    margin-left: auto;
+    @include media-small-desktop {
+        margin-right: 33px
+    }
+    @include media-tablet {
+       display: none;
+    }
+
+}
+.form__title {
+    @include font(24px, 120%, 400, $color-white);
+    margin:0;
+    margin-right: 120px;
+    margin-bottom: 14px;
+}
+.form  input {
+    width: 228px;
+    height: 42px;
+    border: 1px solid $color-orange;
+    background: transparent;
+    padding-left: 10px;
+}
+
+.form  input:placeholder {
+    @include font(16px, 140%, 400, #BDBDBD);
+}
+
+.form button {
+    margin-left: 5px;
+    width: 129px;
+    height: 42px;
+    background-color: $color-light-gray;
+    border: 1px solid $color-light-gray;
+    border-radius: 5px;
+    @include font(16px, 140%, 400, $color-black-blue);
+    cursor: pointer;
+}
+
+.form button:hover {
+    border: 1px solid $color-green;
+    @include font(16px, 140%, 400, $color-green);
+    transition: all .5s;
+}
+
+
+.footer__button {
+    margin-top: 36px;
+    border-radius: 5px;
+    margin-bottom: 44px;
+    @include media-tablet {
+        margin-top: 32px;
+        border-radius: 5px;
+        margin-bottom: 48px;
+    }
+    @include media-mobile {
+        margin-top: 59px;
+        margin-bottom: 0px;
+    }
+
+
+
+
+}
+
+.footer__button a{
+    color: $color-white;
+    text-decoration: none;
+    
+}
+
+.footer__conteiner2 {
+    display: flex;
+    align-items: flex-end;
+}
+.footer__link {
+    @include media-tablet {
+     position: absolute;
+    top: 0;
+    right: 0;
+    }
+    @include media-mobile {
+        display: flex;
+        top: 53px;
+        left: 17%;
+    }
+
+
+        
+
+}
+.link__icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(196, 196, 196, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background: $color-green;
+        transition: .5s;
+    }
+    @include media-mobile {
+        margin-right: 30px;
+    }
+    
+
+}
+.link-net{
+    display: flex;
+    align-items: flex-end;
+    column-gap: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    @include media-tablet {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+.link-net span {
+    &:hover {
+        color: $color-green;
+        transition: .5s;
+    }
+}
+.link__icon-fb{
+    display: inline-block;
+    background-image: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/fb.svg');
+    width: 8px;
+    height: 16px;
+}
+
+.link__icon-tw {
+    background-image: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/tw.svg');
+    width: 16px;
+    height: 14px;
+
+}
+
+.link__icon-inst{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/inst.svg');
+}
+
+.link__icon-yt{
+    display: inline-block;
+    width: 18px;
+    height: 13px;
+    background-image: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/svg/yt.svg');
+}
+.link__text {
+    display: inline-block;
+    @include font(16px, 140%, 400, $color-white);
+}
+@media (max-width: 700px) {
+    .link__text {
+        display: none;
+    }
+}
+.link__tw {
+}
+.link__inst {
+}
+.link__yt {
+}
+.footer__navigation {
+    margin-left: 25%;
+    @include media-small-desktop {
+        margin-left: 19%;
+    }
+    @include media-tablet {
+        margin-left: 0%;
+    }
+    @include media-mobile {
+        margin-top: 109px;
+        margin-left: 11px;
+    }
+
+}
+
+.footer__navigation_d {
+    @include media-small-desktop {
+        margin-left: 21%;
+    }
+    @include media-tablet {
+        margin-left: 0%;
+    }
+    @include media-mobile {
+        margin-top: 109px;
+        margin-left: 11px;
+    }
+}
+
+.navigation {
+    margin: 0;
+    margin-bottom: 13px;
+}
+.navigation__link {
+}
+
+.footer__text  {
+    margin-left: auto;
+    @include media-tablet {
+        margin-top: 22px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .footer__text {
+        position: absolute;
+        top: 115px;
+        left:0;
+        @include font(15px, 120%, 100, $color-white);
+        @include media-mobile{
+            top: 171px;
+            left: 28%;
+        }
+    
+    }
+}
+.footer__text p{
+    @include font(16px, 130%, 100, $color-white);
+    margin: 0;
+    margin-bottom: 10px;
+    @include media-mobile{
+        @include font(15px, 120%, 100, $color-white);
+    }
+    
+    // margin-bottom: 10px;
+}
+
+.footer__text2 {
+    margin-bottom: 0px;
+    @include media-mobile {
+        margin-top: 13px;
+    }
+}

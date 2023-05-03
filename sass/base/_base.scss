@@ -1,0 +1,23 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+h2 {
+    margin: 0;
+    @include font(48px, 120%, 400, $color-black-blue);
+
+}
+
+h3 {
+    margin: 0;
+}
+
+
+h1 {
+    display: none;
+}
+
+body {
+    position: relative;
+}

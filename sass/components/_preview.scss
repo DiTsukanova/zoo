@@ -1,0 +1,121 @@
+.preview {
+    background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/bgPreview.jpg') 0 -80px/cover no-repeat;
+    height: 780px;
+    @include media-small-desktop {
+        height: 584px;
+        background-position: 50% -80px;
+    }
+    @include media-tablet{
+        height: 373px;
+        background-position: 53% -34px;
+    }
+    @include media-mobile{
+        height:187px;
+        background-position: 50% 0px;
+    }
+}
+
+.preview__wrapper {
+    position: relative;
+}
+
+.preview__content {
+}
+
+
+.preview__image {
+    position: absolute;
+    top: 12px;
+    right: 9.3%;
+    width: 465px;
+    height: 465px;
+    background-color: $color-orange;
+    border-radius: 50%;
+    @include media-small-desktop {
+        max-width: 367px;
+        max-height: 367px;
+        top: -10px;
+        right: 15.6%;
+    }
+
+    @include media-tablet{
+        max-width: 237.6px;
+        max-height: 237.6px;
+        top: 10.23px;
+        right: 9%;
+    }
+    @include media-mobile{
+        max-width: 119px;
+        max-height: 119px;
+        top: 22px;
+        right: 9.3%;
+    }
+
+    }
+
+
+.preview__text {
+    text-transform: uppercase;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    margin: 0;
+    position: absolute;
+    top: 86px;
+    right: 0%;
+    @include font(106.5px, 75%, 700, $color-white);
+    @include media-small-desktop {
+        @include font(85px, 75%, 700, $color-white);
+        width: 400px;
+        height: 320px;
+        top: 43px;
+        right: 5.9%;
+    }
+    
+    @include media-tablet{
+        @include font(54.2px, 75%, 700, $color-white);
+        width: 255.6px;
+        height: 204px;
+        top: 49px;
+        right: 0%;
+    }
+    @include media-mobile{
+        @include font(28px, 75%, 700, $color-white);
+        width: 128.13px;
+        height: 102.44px;
+        top: 41.12px;
+        right: 0%;
+    }
+}
+
+.preview__text span {
+    color: $color-yellow;
+}
+.preview__button {
+    border-radius: 25px;
+    right: 8.3%;
+    top: 0;
+    position: absolute;
+    margin-top: 546px;
+    @include media-small-desktop {
+        right: 11.3%;
+        margin-top: 403px;
+    }
+    
+    @include media-tablet{
+        left: 0;
+        margin-top: 245px;
+
+    }
+    @include media-510 {
+
+        margin-top: 255px;
+
+    }
+    @include media-mobile{
+        left: 0;
+        margin-top: 207px;
+
+    }
+    
+}

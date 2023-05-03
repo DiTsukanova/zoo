@@ -1,0 +1,46 @@
+.header__navigation {
+    @include media-tablet {
+
+    }
+}
+.navigation {
+    display: flex;
+}
+
+.navigation.navigation_h {
+    margin-bottom: 7px;
+}
+
+.navigation__link {
+    margin-right: 58px;
+    @include media-small-desktop {
+        margin-right: 40px;
+    }
+    @include media-tablet {
+        margin-right: 36px;
+    }
+    @include media-mobile {
+        margin-right: 30px;
+    }
+}
+
+.navigation__link:last-child{
+    margin-right: 28px;
+    @include media-mobile {
+        margin-right: 0px;
+    }
+}
+
+.navigation__link a {
+    color: $color-white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+       color: $color-orange;
+    }
+}
+
+.navigation__link_active a {
+    color: $color-orange;
+}

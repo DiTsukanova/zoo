@@ -1,0 +1,132 @@
+.backstage {
+    padding-top: 60px;
+    position: relative;
+    @include media-small-desktop {
+        padding-top: 29px;
+    }
+    @include media-tablet{
+
+    }
+    @include media-mobile{
+        padding-top: 110px;
+    }
+}
+.wrapper {
+}
+.backstage__wrapper {
+}
+.backstage__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.backstage__image {
+    background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/bamboo-cap.png');
+    width: 609px;
+    height: 403px;
+    @include media-small-desktop {
+        background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/small-desktop/bamboo-cap.png');
+        width: 455px;
+        height: 408px;
+    }
+    @include media-tablet{
+        display: none;
+    }
+}
+
+.backstage__text {
+    
+    margin-left: 10px;
+    max-width: 465px;
+    align-self: flex-start;
+    @include media-small-desktop {
+        max-width: 454px;
+        align-self: none;
+        margin-top: -10px;
+    }
+    @include media-tablet{
+        margin-top: -3px;
+        max-width: 495px;
+        margin-left: 0px;
+    }
+    @include media-mobile{
+
+    }
+}
+.backstage__title {
+    @include media-tablet{
+        margin-left: 4px;
+    }
+
+    @include media-mobile{
+        @include font(24px, 120%, 400, $color-black-blue);
+        margin-left: 0px;
+    }
+}
+
+.backstage__description1 {
+    @include font(16px, 130%, 400, $color-black-blue);
+    margin-top: 20px;
+    @include media-mobile{
+        margin-top: 8px;
+    }
+}
+.backstage__subtitle {
+    @include font(24px, 120%, 400, $color-black-blue);
+    margin-top: 54px;
+    @include media-small-desktop {
+        margin-top: 54px;
+    }
+    @include media-tablet{
+        margin-left: 4px;
+        margin-top: 30px;
+    }
+    @include media-mobile{
+        margin-top: 20px;
+    }
+}
+.backstage__description2 {
+    @include font(16px, 22.4px, 400, $color-black-blue);
+    margin: 0;
+    margin-top: 34px;
+    @include media-tablet{
+        margin-top: 20px;
+    }
+    @include media-mobile{
+        margin-top: 10px;
+    }
+}
+
+.backstage__img {
+    background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/flower.png') no-repeat;
+    width: 200px;
+    height: 605px;
+    position: absolute;
+    top: -70px;
+    right: 0px;
+    @include media-small-desktop {
+        display: none;
+    }
+    @include media-tablet{
+        display: block;
+        background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/small-desktop/flower_foto1.png') no-repeat;
+        width: 133px;
+        height: 476px;
+        top: -30px;
+        right: 0;
+    }
+    
+}
+
+@media (max-width: 585px) {
+    .backstage__img {
+        width: 90px;
+        @include media-mobile{
+            background: url('/ditsukanova-JSFE2022Q3/online-zoo/assets/img/small-desktop/flower3.png') no-repeat;
+            width: 35px;
+            height: 217px;
+            top: 35px;
+            right: 0;
+        }
+    }
+}
